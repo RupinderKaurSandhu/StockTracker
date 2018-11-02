@@ -1,0 +1,7 @@
+<div *ngFor="let x of data" [ngStyle]="{'background-color': x.change > 0 ? 'lightgreen' : 'maroon'}">
+  <!-- <a href="#dashboard" [routerLink] = "['/manage', x.symbol]" ></a> -->
+  <p>SYMBOL: {{x.symbol}}</p>
+  <p>LAST TRADE PRICE ONLY: {{x.lastTradePriceOnly | currency}}</p>
+  <p>CHANGE: {{x.change}}</p>
+  <p>CHANGE IN PERCENT: {{x.changeInPercent | percent}}</p>
+</div>
